@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CurrencyExplorer.Models.CurrencyAggregatedCourseModel>
+
+@{
+    ViewBag.Title = "Задание 3";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Таблица курсов</h2>
+<table class="table">
+    <tr>
+
+        <th>
+            Код Бумаги
+        </th>
+        <th>
+            Период агрегации 
+        </th>
+        <th>
+            Максимальное значение
+        </th>
+        <th>
+            Минимальное значение
+        </th>
+        <th>
+            Первое значение
+        </th>
+        <th>
+            Последнее значение
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValuePairName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AggregateInterval)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastValue)
+        </td>
+    </tr>
+}
+
+</table>
