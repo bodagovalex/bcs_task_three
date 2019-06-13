@@ -7,3 +7,5 @@
 /packages/EntityFramework.6.2.0
 /packages/EntityFramework.ru.6.2.0
 /EFCodeFirstDLL/obj/Debug
+/.vs
+/packages
