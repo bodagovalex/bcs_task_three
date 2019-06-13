@@ -1,10 +1,8 @@
 ﻿using CurrencyExchangeService;
-using CurrencyExchangeService.Models;
 using CurrencyExplorer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace CurrencyExplorer.Core
 {
